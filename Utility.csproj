@@ -117,7 +117,9 @@
     <Reference Include="log4net">
       <HintPath>..\..\DLLComuni\log4net.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\DLLcomuni\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="OggettiComuniStrade">
       <HintPath>..\..\DLLComuni\OggettiComuniStrade.dll</HintPath>
     </Reference>

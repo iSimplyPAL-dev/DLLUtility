@@ -2380,6 +2380,9 @@ namespace Utility
                                 , "FORZA_CALCOLAPV"
                                 , "NCOMPONENTI_PV"
                                 , "KEY"
+                                // BD 09/07/2021
+                                , "IMPORTO_FISSORID"
+                                // BD 09/07/2021
                             );
 
                             DataView dvMyView = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("ID", myDettaglioTestata.Id)
@@ -2423,6 +2426,9 @@ namespace Utility
                                 , ctx.GetParam("FORZA_CALCOLAPV", myDettaglioTestata.bForzaPV)
                                 , ctx.GetParam("NCOMPONENTI_PV", myDettaglioTestata.nComponentiPV)
                                 , ctx.GetParam("KEY", myDettaglioTestata.Key)
+                                // BD 09/07/2021
+                                , ctx.GetParam("IMPORTO_FISSORID", myDettaglioTestata.ImportoFissoRid)
+                            // BD 09/07/2021
                             );
                             foreach (DataRowView myRow in dvMyView)
                             {
