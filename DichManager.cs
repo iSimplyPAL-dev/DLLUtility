@@ -3009,7 +3009,7 @@ namespace Utility
                                 , ctx.GetParam("DATA_CESSAZIONE", ((myArticolo.tDataCessazione != DateTime.MinValue) ? myArticolo.tDataCessazione : (object)DBNull.Value))
                                 , ctx.GetParam("OPERATORE", myArticolo.sOperatore)
                                 // BD 09/07/2021
-                                , ctx.GetParam("IMPORTO_FISSORID", myDettaglioTestata.ImportoFissoRid)
+                                , ctx.GetParam("IMPORTO_FISSORID", myArticolo.ImportoFissoRid)
                                 // BD 09/07/2021
 
                             );
