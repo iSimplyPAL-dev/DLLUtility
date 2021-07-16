@@ -2944,6 +2944,10 @@ namespace Utility
                                 , "DATA_VARIAZIONE"
                                 , "DATA_CESSAZIONE"
                                 , "OPERATORE"
+                                // BD 09/07/2021
+                                , "IMPORTO_FISSORID"
+                                // BD 09/07/2021
+
                             );
                             DataView dvMyView = ctx.GetDataView(sSQL, "TBL", ctx.GetParam("ID", myArticolo.Id)
                                 , ctx.GetParam("IDRUOLO", myArticolo.IdArticolo)
@@ -3004,6 +3008,10 @@ namespace Utility
                                 , ctx.GetParam("DATA_VARIAZIONE", ((myArticolo.tDataVariazione != DateTime.MinValue) ? myArticolo.tDataVariazione : (object)DBNull.Value))
                                 , ctx.GetParam("DATA_CESSAZIONE", ((myArticolo.tDataCessazione != DateTime.MinValue) ? myArticolo.tDataCessazione : (object)DBNull.Value))
                                 , ctx.GetParam("OPERATORE", myArticolo.sOperatore)
+                                // BD 09/07/2021
+                                , ctx.GetParam("IMPORTO_FISSORID", myDettaglioTestata.ImportoFissoRid)
+                                // BD 09/07/2021
+
                             );
                             foreach (DataRowView myRow in dvMyView)
                             {
